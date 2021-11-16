@@ -7,12 +7,10 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-import javax.persistence.Column;
-
 @NoArgsConstructor
 @Getter(AccessLevel.PUBLIC)
 @Setter(AccessLevel.PUBLIC)
-public class PostDto {
+public class PostRetunDto {
 
     private Long id;
 
@@ -20,8 +18,9 @@ public class PostDto {
 
     private String descricao;
 
-    private String tipoUsuario;
-
     private Long id_user;
 
+    private Ong ong;
+
+    private Usuario usuario;
 }

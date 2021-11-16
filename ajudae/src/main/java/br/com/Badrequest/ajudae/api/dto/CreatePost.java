@@ -16,5 +16,7 @@ public class CreatePost {
 
     private String descricao;
 
+    private String tipoUsuario;
+
     private Long id_user;
 }

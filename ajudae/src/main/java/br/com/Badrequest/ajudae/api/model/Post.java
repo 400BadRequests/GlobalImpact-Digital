@@ -26,6 +26,9 @@ public class Post {
     @Column(name = "DESCRICAO", nullable = false, length = 1000)
     private String descricao;
 
+    @Column(name = "TIPO_USUARIO", nullable = false)
+    private String tipoUsuario;
+
     @Column(name = "ID_USER", nullable = false)
     private Long id_user;
 }
