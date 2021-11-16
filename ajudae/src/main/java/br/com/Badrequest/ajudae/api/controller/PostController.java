@@ -55,7 +55,7 @@ public class PostController {
                 Ong ong = this.ongService.findById(postFound.getId_user());
                 dto.setOng(ong);
             }
-
+            dtos.add(dto);
         }
         return new ResponseEntity<>(dtos, HttpStatus.OK);
     }
